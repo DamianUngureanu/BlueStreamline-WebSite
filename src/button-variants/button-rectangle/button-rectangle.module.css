@@ -1,0 +1,55 @@
+.buttonRectangle{
+    height: 100%;
+    width: 100%;
+    color:var(--color);
+    padding: 10px;
+    background-color: transparent;
+
+    border:none;
+    border-radius: 1.5px;
+    font-size: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    &:active > .buttonRectangleActive{
+        top: var(--top1) !important;
+        left: var(--left1) !important;
+    }
+}
+.buttonRectangleContent{
+    color: var(--color) !important;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 52;
+    &:hover{
+        cursor: pointer;
+        color:var(--color-accent) !important;
+    }
+    &:active{
+        background-color: transparent;
+        color:var(--color) !important;
+    }
+}
+.buttonRectangleActive{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-accent);
+    border-radius: 1.5px;
+
+    position: absolute;
+    top: var(--top0);
+    left: var(--left0);
+    z-index: 51;
+}
+.buttonRectangleContentActive{
+    color: var(--color-accent);
+}

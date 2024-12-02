@@ -1,0 +1,217 @@
+.container {
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    filter: blur(1000px);
+
+    background-color: var(--color-accent);
+    z-index: 0;
+  }
+}
+.sliderContainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.slider {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: min(max(100px, 6vw), 300px);
+  aspect-ratio: 2 / 3;
+  transform-style: preserve-3d;
+  transform: translateX(-50%) perspective(1000px) rotateX(-16deg);
+  transition: transform 0s;
+
+  z-index: 10;
+  user-select: none;
+
+  &:hover .card {
+    filter: grayscale(100%);
+  }
+  &:hover .back {
+    filter: grayscale(100%);
+  }
+
+  &:active {
+    animation-play-state: paused;
+  }
+}
+.sliderRotate {
+  animation-play-state: running !important;
+}
+
+.back {
+  position: absolute;
+  backface-visibility: hidden;
+  inset: 0 0 0 0;
+  background: linear-gradient(
+    141deg,
+    var(--color-accent) 0%,
+    var(--background-secondary) 20%,
+    var(--background-secondary) 80%,
+    var(--color-accent) 100%
+  );
+  transform: rotateY(calc(var(--positionBack) * (360deg / var(--quantity))))
+    translateZ(min(max(550px, 18vw), 800px)) rotateX(5deg) rotateY(180deg);
+
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0px 0px 3px var(--color-accent);
+
+  overflow: hidden;
+
+  & img{
+    width: 200%;
+    transform: rotateZ(300deg);
+  }
+}
+.card {
+  position: absolute;
+  inset: 0 0 0 0;
+  background: linear-gradient(
+    141deg,
+    var(--color-accent) 0%,
+    var(--background-secondary) 20%,
+    var(--background-secondary) 80%,
+    var(--color-accent) 100%
+  );
+  transform: rotateY(calc(var(--position) * (360deg / var(--quantity))))
+    translateZ(min(max(550px, 18vw), 800px)) rotateX(5deg);
+
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px var(--color-accent);
+  color: var(--color);
+  padding: 10px;
+  perspective: 1000px;
+  backface-visibility: hidden;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  &::after {
+    position: absolute;
+    inset: 0 0 0 0;
+    content: "";
+    z-index: 100;
+  }
+
+  &:hover {
+    filter: grayscale(0%) !important;
+    transform: rotateY(calc(var(--position) * (360deg / var(--quantity))))
+      translateZ(min(max(550px, 18vw), 800px)) scale(1.1) rotateX(5deg);
+    color: var(--color-accent) !important;
+    box-shadow: 0px 0px 3px 2px var(--color-accent);
+  }
+}
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 9;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+
+    border-left: 2px solid var(--color);
+    border-bottom: 1px solid var(--color);
+    z-index: 10;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+
+    border-right: 2px solid var(--color);
+    border-bottom: 1px solid var(--color);
+    z-index: 10;
+  }
+}
+.infoContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+  font-size: min(3vw, 10px);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+
+    border-left: 2px solid var(--color);
+    border-top: 1px solid var(--color);
+    z-index: 10;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+
+    border-right: 2px solid var(--color);
+    border-top: 1px solid var(--color);
+    z-index: 10;
+  }
+}
+
+.cup {
+  position: absolute;
+  left: 50%;
+  top: max(10%, 150px);
+  transform: translateX(-50%);
+
+  width: calc((100vw + 100vh)/2);
+  aspect-ratio: 1/1;
+
+  filter: brightness(var(--brightness));
+  z-index: 1;
+
+  user-select: none;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

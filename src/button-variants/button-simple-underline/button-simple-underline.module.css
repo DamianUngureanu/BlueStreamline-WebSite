@@ -1,0 +1,23 @@
+.button{
+    color:var(--color);
+    background-color: transparent;
+    border: none;
+    position: relative;
+
+    &::after{
+        content:"";
+        position: absolute;
+        width: 100%;
+        top:100%;
+        left:0;
+        border-bottom: 1px solid var(--color);
+    }
+    &:hover::after{
+        top:110%;
+        border-bottom: 1px solid var(--color-accent);
+    }
+    &:hover{
+        color:var(--color-accent);
+        cursor: pointer;
+    }
+}

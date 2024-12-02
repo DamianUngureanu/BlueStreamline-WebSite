@@ -1,0 +1,20 @@
+
+.imgContainer{
+    columns:var(--widthColumns);
+    margin-top: 7px;
+    width: 100%;
+
+    & img{
+        width: 100%;
+        margin-bottom: 1em;
+        border-radius: 4px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.imgContainerClose{
+    height: 0px !important;
+    overflow: hidden;
+}

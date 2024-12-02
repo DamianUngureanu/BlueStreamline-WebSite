@@ -1,0 +1,23 @@
+
+.imgContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,var(--widthColumns));
+    gap:30px;
+
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-bottom: 1em;
+        border-radius: 4px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.imgContainerClose{
+    height: 0px !important;
+    overflow: hidden;
+}

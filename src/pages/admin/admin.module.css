@@ -1,0 +1,26 @@
+
+.inputContainer {
+  & p,
+  & input,
+  & label {
+    color: var(--color);
+    display: block;
+  }
+  & input{
+    background-color: var(--background-secondary);
+    width: 40%;
+    height: 30px;
+  }
+  & legend{
+    color: var(--color-accent);
+    font-size: 20px;
+    padding: 10px;
+  } 
+  & fieldset {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}

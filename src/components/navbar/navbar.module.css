@@ -1,0 +1,72 @@
+.navbarScrolled{
+    background-color: color-mix(in oklab, var(--background-secondary) 70%, rgba(0,0,0,0) 30%) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    height: 100px !important;
+
+    & a{
+        height: 90% !important;
+    }
+}
+.navbar{
+    background-color: var(--background-secondary);
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top:0;
+    z-index: 99;
+
+    & a{
+        max-width: 600px;
+        height: 50%;
+
+        & img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & section{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 20px;
+
+        height: 100%;
+        width: 50%;
+    }
+}
+.pages{
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    flex: 1;
+}
+.buttons{
+    & a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}
+.language{
+    color:var(--color);
+    & button{
+        background-color: transparent;
+        border: none;
+        color: var(--color);
+        font-size: min(1.5vw,18px);
+    
+        &:hover{
+            color:var(--color-accent);
+            cursor: pointer;
+        }
+    }
+} 

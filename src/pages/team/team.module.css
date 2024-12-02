@@ -1,0 +1,9 @@
+.container{
+    width: 100vw;
+    padding-bottom: 30px;
+}
+.content{
+    width: 100%;
+    margin-top: 200px;
+    padding: 0 20px;
+}

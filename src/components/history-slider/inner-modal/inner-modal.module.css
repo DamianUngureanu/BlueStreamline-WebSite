@@ -1,0 +1,190 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  margin-top: 10px;
+
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  z-index: 100;
+}
+.imageContainer {
+  background: linear-gradient(
+    141deg,
+    var(--color-accent) 0%,
+    var(--background-secondary) 20%,
+    var(--background-secondary) 80%,
+    var(--color-accent) 100%
+  );
+  grid-row: span 3;
+  grid-column: span 2;
+
+  border-radius: 4px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  padding: 10px;
+
+  box-shadow: 0 0 2px 1px var(--color-accent),
+    inset 0 0 2px 1px var(--color-accent);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.descriptionContainer {
+  background-color: var(--background);
+  grid-column: span 2;
+  grid-row: span 3;
+
+  box-shadow:  0 0 2px 1px var(--color-accent),inset 0 0 2px 1px var(--color-accent);
+  border-radius: 4px;
+
+  padding: 10px;
+  z-index: 5;
+  overflow: hidden;
+  margin: 0 0px 30px 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+
+  & p {
+    font-size: 20px;
+    width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: left;
+    text-indent: 10px;
+  }
+  & p::-webkit-scrollbar {
+    width: 600px; /* Lățimea scroll-barului vertical */
+    height: 12px; /* Înălțimea scroll-barului orizontal */
+  }
+
+  & p::scrollbar-track {
+    background: transparent; /* Culoarea fundalului scroll-barului */
+    border-radius: 10px; /* Rounding for track */
+  }
+
+  & p::scrollbar-thumb {
+    background: var(--color-accent); /* Culoarea thumb-ului scroll-barului */
+    border-radius: 10px; /* Rounding for thumb */
+  }
+
+  & p::scrollbar-thumb:hover {
+    background: color-mix(
+      in oklab,
+      var(--color-accent) 70%,
+      rgb(0, 0, 0) 30%
+    ); /* Culoarea thumb-ului la hover */
+  }
+}
+.mediaContainer {
+  background-color: transparent;
+  grid-row: span 3;
+
+  display: grid;
+  grid-template-rows: repeat(auto-fill,1fr);
+
+  & a{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    & svg{
+        width: 35px;
+        height: 35px;
+
+        position: relative;
+        transition: 0s;
+
+        &:hover{
+            color:var(--color-accent);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top:50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            filter: blur(100px);
+        }
+        &:hover::after{
+            background-color: var(--color-accent);
+        }
+    }
+  }
+}
+
+.tabsContainer {
+  background-color: var(--background);
+  grid-column: span 3;
+  grid-row: span 3;
+
+  box-shadow: 0 0 2px 1px var(--color-accent),inset 0 0 2px 1px var(--color-accent);
+  border-radius: 4px;
+  z-index: 1;
+
+  margin-left: 10px;
+  padding: 10px;
+}
+.tabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: color-mix(in oklab, var(--background) 70%, rgba(0,0,0,0) 30%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.tabContent{
+  width: 100%;
+  height: calc(100% - 40px);
+  padding: 10px;
+  overflow-y: auto;
+  background-color: var(--background);
+}
+
+.teamContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: var(--background-tertiary);
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 1px var(--color-accent),inset 0 0 2px 1px var(--color-accent);
+
+  & img{
+    flex: 2 !important;
+    width: 100% !important;
+    object-fit: contain !important;
+  }
+}
+.teamInfo{
+  flex: 1;
+  width: 100%;
+
+  & h3{
+    color: var(--color-accent);
+    margin-bottom: 5px;
+  }
+}

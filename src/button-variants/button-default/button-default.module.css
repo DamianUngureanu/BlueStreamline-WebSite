@@ -1,0 +1,18 @@
+.button{
+    background-color: transparent;
+    color:var(--color);
+    border:none;
+    padding: 7px 10px;
+
+    font-size: min(20px,4vw);
+
+    position: relative;
+
+    &:hover{
+        color: var(--color-accent);
+        cursor: pointer;
+    }
+}
+.buttonActive{
+    color:var(--color-accent);
+}

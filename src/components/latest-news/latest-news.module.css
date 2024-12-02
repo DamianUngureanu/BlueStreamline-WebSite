@@ -1,0 +1,78 @@
+.container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+
+.card {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--background-tertiary);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+
+  & img {
+    width: 100%;
+    height: 66%;
+
+    object-fit: cover;
+  }
+}
+.card a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  }
+.card a:hover {
+    background: linear-gradient(
+      135deg,
+      rgba(5, 143, 154, 0.3) 18%,
+      rgba(63, 134, 180, 0.098) 41%,
+      rgba(0, 212, 255, 0.2) 71%
+    );
+  }
+.info {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  & svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+
+  & h3 {
+    color: var(--color-accent);
+    padding: 0 0 10px 0;
+  }
+
+  & span {
+    overflow: hidden; /* Ascunde textul care depășește limita */
+    text-overflow: ellipsis; /* Adaugă "..." la sfârșitul textului tăiat */
+    display: -webkit-box; /* Utilizat pentru a crea un container flexibil */
+    -webkit-box-orient: vertical; /* Setează orientarea în verticală */
+    -webkit-line-clamp: 3;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,119 @@
+.sideMenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    color:var(--color);
+
+    height: 100vh;
+    width: min(100%,400px);
+    background-color: var(--background);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: transform 0.5s;
+    z-index: 1002;
+
+    & a{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    & img{
+        width: 100%;
+    }
+}
+.sideMenuClose{
+    transform: translateX(-100%);
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    z-index: 1001;
+    opacity: 1;
+}
+.overlayClose{
+    width: 0;
+    opacity: 0;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+
+    & h2{
+        color:var(--color);
+    }
+
+    & svg{
+        height: 36px;
+        width: 36px;
+        color:var(--color);
+    }
+    & svg:hover{
+        cursor: pointer;
+        color:var(--color-accent);
+    }
+}
+.list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 0 10px;
+
+    & a{
+        font-weight: 700;
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        text-indent:10px;
+    }
+
+    & dt{
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px dotted var(--color);
+        color: var(--color);
+        &:hover > a{
+            color: var(--color-accent);
+            cursor: pointer;
+        }
+    }
+}
+
+.language{
+    margin-top: 50px;
+
+    & button{
+        background-color: transparent;
+        border: none;
+        color: var(--color);
+        font-size: min(1.5vw,18px);
+    
+        &:hover{
+            color:var(--color-accent);
+            cursor: pointer;
+        }
+    }
+} 

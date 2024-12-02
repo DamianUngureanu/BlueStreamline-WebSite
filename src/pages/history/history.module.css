@@ -1,0 +1,16 @@
+.sliderContainer{
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden !important ; */
+    /* background: radial-gradient(circle, var(--color-accent) 0%, var(--background-secondary) 20%, var(--background-secondary) 96%, var(--color-accent) 100%); */
+    
+
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100vw;
+    overflow: hidden;
+}

@@ -1,0 +1,17 @@
+export const enum Cars {
+    bs09 = "BS 9",
+    bs10 = "BS 10",
+    bs11 = "BS 11",
+    bs12 = "BS 12",
+    bs13 = "BS 13",
+    bs14 = "BS 14",
+    bs15 = "BS 15",
+    bs16 = "BS 16",
+    bs17 = "BS 17",
+    bs18 = "BS 18",
+    bs19 = "BS 19",
+    bs21 = "BS 21",
+    bs22 = "BS 22",
+    bs23 = "BS 23",
+    bs24 = "BS 24",
+  }

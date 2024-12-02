@@ -1,0 +1,24 @@
+
+/* ::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important; 
+    visibility: hidden !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent !important;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent !important; 
+  } */
+   .container{
+    width: 100vw;
+    height: calc(100vh + 10px);
+    overflow: hidden;
+    position: relative;
+   }

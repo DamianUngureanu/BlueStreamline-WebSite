@@ -1,0 +1,107 @@
+.videosContainer{
+    height: calc(100vh + 20px);
+    width: calc(100vw * var(--videoNumber));
+    position: relative;
+    transform: translateX(calc(100vw * var(----numberOfPageType)));
+    animation: videosIntro 3s linear;
+    
+  &::before{
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, var(--background) 100%);
+    background-size: 3px 3px;
+    z-index: 1;
+  }
+}
+
+@keyframes videosIntro{
+    0%{
+      overflow-y: hidden;
+      height:100vh;
+    }
+    100%{
+      overflow-y: hidden;
+      height:100vh;
+    }
+  }
+.videoContainer{
+    position: absolute;
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: 0s;
+    opacity:0;
+
+    & video{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        opacity: inherit;
+    }
+}
+.videoContainerSelected{
+    opacity: 1 !important;
+}
+
+.firstTransitionPanel{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-accent);
+    
+    position:absolute;
+    left:100%;
+    top:0;
+    z-index: 1;
+}
+.firstTransitionPanelStart{
+    animation:firstTransition 1.5s !important;
+}
+@keyframes firstTransition{
+    0%{
+       left:100%; 
+    }
+    25%{
+        left:0%;
+    }
+    75%{
+        left:0%;
+    }
+    100%{
+        left:-100%;
+    }
+}
+
+.secondTransitionPanel{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-hover);
+    
+    position:absolute;
+    left:100%;
+    top:0;
+
+    z-index: 2;
+}
+.secondTransitionPanelStart{
+    animation:secondTransition 1.5s !important;
+    animation-delay: 0.7s;
+}
+@keyframes secondTransition{
+    0%{
+       left:100%; 
+    }
+    50%{
+        left:0%;
+    }
+    100%{
+        left:-100%;
+    }
+}

@@ -1,0 +1,247 @@
+.navbar{
+    --heightNavbar:calc(100vh / 3);
+    width: 100vw;
+    height: var(--heightNavbar);
+    padding: 0 10px;
+    background-color:color-mix(in oklab ,var(--background-secondary) 80%, #00000080 20%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 5vw;
+
+    position: fixed;
+    top:0;
+    left:0;
+
+    overflow: hidden;
+    transition: height 0.5s;
+    animation: logoOverlay 6s cubic-bezier(0.5, 0, 0.5, 1);
+    z-index: 1000;
+}
+@keyframes logoOverlay{
+    0%{
+        height:100vh;
+    }
+    40%{
+        height:100vh;
+    }
+    60%{
+        height: var(--heightNavbar);
+    }
+}
+.navbarLogo{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position:relative;
+    z-index: 30;
+
+    & img{
+        width: var(--logoWidth);
+        object-fit: contain;
+        animation: logoAppearImage 3s cubic-bezier(0.5, 0, 0.5, 1);
+        z-index: 2;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    
+        width: 100px;
+        border-radius: 50%;
+        background-color: var(--background-hover);
+        aspect-ratio: 1 / 1;
+        filter: blur(110px);
+        animation: logoBackLight 3s cubic-bezier(0.5, 0, 0.5, 1);
+        z-index: 1;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    
+        background: radial-gradient(circle, rgb(76, 228, 252) 0%, var(--color-accent) 51%, var(--color-accent) 100%);
+        box-shadow: 0 0 0px 0px var(--color-accent);
+    
+        border-radius: 50%;
+        z-index: 100;
+        opacity: 0;
+    
+        animation: logoAppearLight 3s cubic-bezier(0.5, 0, 0.5, 1);
+    }
+}
+@keyframes logoAppearImage{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 0;
+    }
+    70%{
+        width: var(--logoWidth);
+    }
+}
+@keyframes logoBackLight{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 0;
+    }
+    70%{
+        width: 100px;
+    }
+}
+@keyframes logoAppearLight{
+    0%{
+        aspect-ratio: 1 / 1 ;
+        width: 0;
+        opacity: 1;
+    
+    }
+    20%{
+        aspect-ratio: 1 / 1 ;
+        width: 20px;
+        box-shadow: 0 0 10px 2px var(--color-accent);
+        opacity: 1;
+    }
+    30%{
+        aspect-ratio: 1 / 1 ;
+        width: 0;
+        opacity: 1;
+    }
+    50%{
+        aspect-ratio: 1 / 1 ;
+        width: 0;
+        opacity: 1;
+    }
+    70%{
+        width: 410px;
+        aspect-ratio: 1 / 1 ;
+        box-shadow: 0 0 100px 1px var(--color-accent);
+        opacity: 1;
+    }
+    100%{
+        width: 100vw;
+        aspect-ratio: 1 / 1 ;
+        box-shadow: 0 0 1000px 200px var(--color-accent);
+        opacity: 0;
+    }
+}
+
+.navbarLeanguage{
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+    color:var(--color);
+    font-size: min(14px,5vw);
+
+    position:fixed;
+    top:10px;
+    left:calc(100vw - 20px);
+    transform: translateX(-100%);
+
+    animation:leanguageAppear 4s cubic-bezier(0.5, 0, 0.5, 1);
+    z-index: 60;
+
+    & button{
+        font-size: min(14px,5vw);
+    }
+}
+@keyframes leanguageAppear{
+    0%{
+        transform: translateY(-100px) translateX(-100%);
+    }
+    80%{
+        transform: translateY(-100px) translateX(-100%);
+    }
+    100%{
+        transform: translateY(0px) translateX(-100%);
+    }
+}
+
+.pageType{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+    opacity: 1;
+    animation: buttonsAppear 4s cubic-bezier(0.5, 0, 0.5, 1);
+}
+.pageTypeClose{
+    visibility: collapse;
+    height: 0px;
+}
+@keyframes buttonsAppear{
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.menuButton{
+    position: absolute;
+    top:calc(100vh / 20);
+    left:10px;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    color:var(--color);
+    background-color: transparent;
+    
+    border:none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 60;
+    transition: transform 0.5s,border-color 0.5s;
+
+    & svg{
+        height: 40px;
+        width: 40px;
+    
+        &:hover{
+            cursor: pointer;
+            border-color:transparent;
+        }
+        &:hover > svg{
+            transform: scale(1.1);
+        }
+    }
+}
+.menuButtonClose{
+    transition: 0s;
+    visibility: collapse;
+    height: 0;
+}
+
+
+

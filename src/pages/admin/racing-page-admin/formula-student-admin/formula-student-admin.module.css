@@ -1,0 +1,17 @@
+.formulaContainer {
+    background-color: var(--background-tertiary);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    border: 2px solid var(--color);
+
+    & textarea{
+        color:var(--color);
+        background-color: var(--background-secondary);
+        max-width: 90vw;
+        min-width: 10vw;
+        min-height: 50px;
+    }
+  }

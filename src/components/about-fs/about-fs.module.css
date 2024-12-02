@@ -1,0 +1,70 @@
+.container{
+    width: 90%;
+
+    & article{
+        margin-top: 5px;
+        width: 100%;
+        padding: 30px;
+        background-color: var(--background-tertiary);
+        border-radius: 4px;
+        text-indent: 10px;
+
+        overflow: hidden;
+
+        & span{
+            color:var(--color-accent);
+            font-weight: 700;
+        }
+    }
+     
+    & h3{
+        color:var(--color-accent);
+        font-weight: 700;
+    }
+    
+}
+.pieContainer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    column-gap: 10px;
+
+    & dt{
+        font-size: 16px;
+    }
+
+    & ul{
+        margin-left: 30px;
+    }
+}
+.pieChart{
+    width: min(80%,400px);
+}
+
+.explainContainer{
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+}
+
+.articleClose{
+    height: 0px !important;
+    padding: 0px !important;
+}
+
+@media screen and (max-width:800px){
+    .explainContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .pieContainer{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:530px){
+    .explainContainer{
+        grid-template-columns: 1fr ;
+    }
+}

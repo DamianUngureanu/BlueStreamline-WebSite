@@ -1,0 +1,88 @@
+
+.container{
+    width: 100vw !important;
+
+    color:var(--color);
+    background-color: var(--background);
+
+}
+.content{
+    display: flex;
+    align-items: stretch;
+
+} 
+.rightSection{
+    height: 100% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+    row-gap: 200px;
+}
+.leftSection{
+    flex: 1;
+    min-height: 100% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuContainer{
+    height: 100%;
+    width: 50%;
+    border-left: 2px dashed var(--color);
+    padding-left: 10px;
+    font-size: 18px;
+}
+.menuButton{
+    position: fixed;
+    top:20px;
+    left: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    color:var(--color);
+
+    background-color: color-mix(in oklab, var(--background-secondary) 90%, rgba(0,0,0,0) 10%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: none;
+    border-radius: 4px;
+    z-index: 50 ;
+
+    &:hover{
+        color:var(--color-accent);
+        cursor: pointer;
+    }
+
+    & svg{
+        width: 35px;
+        height: 35px;
+    }
+}
+.menu{
+    position: sticky;
+    padding-left: 8px;
+    font-size: 22px;
+
+    &:hover{
+        cursor: pointer;
+        color: var(--color-accent);
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top:50%;
+        left:0;
+        transform: translateX(calc(-100% - 2px)) translateY(-50%);
+        width: 18px;
+        aspect-ratio: 1/1;
+        border-radius: 40%;
+        background-color: var(--color-accent);
+        box-shadow: 0 0 0px 3px color-mix(in oklab, var(--color-accent) 70%, rgb(0,0,0) 30%);
+    }
+}

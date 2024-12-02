@@ -1,0 +1,38 @@
+.button{
+    background-color: transparent;
+    color:var(--color);
+    border:none;
+    padding: 7px 10px;
+
+    font-size: min(20px,4vw);
+
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width:50%;
+        height:50%;
+        top:var(--top);
+        left:var(--left);
+        transform: translateX(-50%) translateY(-50%);
+
+        background-color: var(--background-hover);
+        filter:blur(20px);
+        transition: opacity 0.15s,filter 0.15s;
+        opacity: 0;
+    }
+
+    &:hover::before{
+        opacity: 1;
+    }
+
+    &:hover{
+        color:var(--color-accent);
+        cursor: pointer;
+    }
+}
+.buttonActive::before{
+    opacity: 1;
+    filter:blur(20px);
+}
