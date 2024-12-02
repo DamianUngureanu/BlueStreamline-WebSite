@@ -1,0 +1,123 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src\\app\\layout.tsx","import":"","arguments":[{"src":"./fonts/GeistVF.woff","variable":"--font-geist-sans","weight":"100 900"}],"variableName":"geistSans"} ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+font-family: '__geistSans_1e4310';
+src: url(/_next/static/media/4473ecc91f70f139-s.p.woff) format('woff');
+font-display: swap;
+font-weight: 100 900;
+}@font-face {font-family: '__geistSans_Fallback_1e4310';src: local("Arial");ascent-override: 85.83%;descent-override: 20.52%;line-gap-override: 9.33%;size-adjust: 107.19%
+}.__className_1e4310 {font-family: '__geistSans_1e4310', '__geistSans_Fallback_1e4310'
+}.__variable_1e4310 {--font-geist-sans: '__geistSans_1e4310', '__geistSans_Fallback_1e4310'
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src\\app\\layout.tsx","import":"","arguments":[{"src":"./fonts/GeistMonoVF.woff","variable":"--font-geist-mono","weight":"100 900"}],"variableName":"geistMono"} ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+font-family: '__geistMono_c3aa02';
+src: url(/_next/static/media/463dafcda517f24f-s.p.woff) format('woff');
+font-display: swap;
+font-weight: 100 900;
+}@font-face {font-family: '__geistMono_Fallback_c3aa02';src: local("Arial");ascent-override: 69.97%;descent-override: 16.73%;line-gap-override: 7.61%;size-adjust: 131.49%
+}.__className_c3aa02 {font-family: '__geistMono_c3aa02', '__geistMono_Fallback_c3aa02'
+}.__variable_c3aa02 {--font-geist-mono: '__geistMono_c3aa02', '__geistMono_Fallback_c3aa02'
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/globals.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: .15s;
+  font-family:'Comfortaa';
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+  color:var(--color);
+}
+body{
+  background-color: var(--background);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+@font-face {
+  font-family: 'Comfortaa'; 
+  src: url(/_next/static/media/Comfortaa-VariableFont_wght.1748088b.ttf); 
+  /* font-family: 'Russo One'; 
+  src: url('fonts/Russo_One/RussoOne-Regular.ttf');  */
+}
+
+::-webkit-scrollbar {
+  width: 6px; /* Lățimea scroll-barului vertical */
+  height: 12px; /* Înălțimea scroll-barului orizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Culoarea fundalului scroll-barului */
+  border-radius: 10px; /* Rounding for track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent); /* Culoarea thumb-ului scroll-barului */
+  border-radius: 10px; /* Rounding for thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in oklab, var(--color-accent) 70%, rgb(0,0,0) 30%); /* Culoarea thumb-ului la hover */
+}
+
+:root{
+  --brightness:1;
+  /* COLORS */
+  --transparent-white:#ffffff73;
+  --transparent-black:#00000080;
+
+
+  --light-color:#ffffff;
+  --dark-color:#000000;
+
+  --color-accent:#06afd8;
+
+  --box-shadow-prepare-positive:2px 2px 2px;
+  --box-shadow-prepare-negative:-2px -2px 2px;
+
+  /* ELEMENTS */
+  --color:var(--dark-color);
+  --color-hover:var(--light-color);
+  
+  --background:rgb(214, 214, 214);
+  --background-secondary:rgb(245, 245, 245);
+  --background-tertiary:rgb(255, 255, 255);
+  --background-hover:color-mix(in oklab, var(--light-color) 60%, var(--color-accent) 40%);
+  --background-transparent:var(--transparent-white);
+  
+  --box-shadow-outset:var(--box-shadow-prepare-positive) var(--transparent-black),var(--box-shadow-prepare-negative) var(--transparent-white);
+
+  --box-shadow-inset:inset var(--box-shadow-prepare-negative) var(--transparent-white),inset var(--box-shadow-prepare-positive) var(--transparent-black);
+}
+
+@media(prefers-color-scheme:dark){
+:root{
+  --brightness:0.7;
+  --color:var(--light-color);
+  --color-hover:var(--dark-color);
+
+  --background:rgb(27, 27, 27);
+  --background-secondary:rgb(10, 10, 10);
+  --background-tertiary:rgb(54, 54, 54);
+  --background-hover:color-mix(in oklab, var(--light-color) 60%, var(--color-accent) 40%);
+  --background-transparent:var(--transparent-black);
+  
+  --box-shadow-outset:var(--box-shadow-prepare-positive) var(--transparent-black),var(--box-shadow-prepare-negative) var(--transparent-white);
+
+  --box-shadow-inset:inset var(--box-shadow-prepare-negative) var(--transparent-white),inset var(--box-shadow-prepare-positive) var(--transparent-black);
+  
+}
+}

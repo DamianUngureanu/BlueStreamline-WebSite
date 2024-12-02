@@ -1,0 +1,2305 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/video-intro/video-intro.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+.video-intro_videosContainer__pH6hL{
+    height: calc(100vh + 20px);
+    width: calc(100vw * var(--videoNumber));
+    position: relative;
+    transform: translateX(calc(100vw * var(----numberOfPageType)));
+    animation: video-intro_videosIntro__Eb8cA 3s linear;
+    
+  &::before{
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, var(--background) 100%);
+    background-size: 3px 3px;
+    z-index: 1;
+  }
+}
+
+@keyframes video-intro_videosIntro__Eb8cA{
+    0%{
+      overflow-y: hidden;
+      height:100vh;
+    }
+    100%{
+      overflow-y: hidden;
+      height:100vh;
+    }
+  }
+.video-intro_videoContainer__NTQO_{
+    position: absolute;
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: 0s;
+    opacity:0;
+
+    & video{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        opacity: inherit;
+    }
+}
+.video-intro_videoContainerSelected__opWic{
+    opacity: 1 !important;
+}
+
+.video-intro_firstTransitionPanel__8jB0_{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-accent);
+    
+    position:absolute;
+    left:100%;
+    top:0;
+    z-index: 1;
+}
+.video-intro_firstTransitionPanelStart__Il818{
+    animation:video-intro_firstTransition__uECja 1.5s !important;
+}
+@keyframes video-intro_firstTransition__uECja{
+    0%{
+       left:100%; 
+    }
+    25%{
+        left:0%;
+    }
+    75%{
+        left:0%;
+    }
+    100%{
+        left:-100%;
+    }
+}
+
+.video-intro_secondTransitionPanel__taU5T{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-hover);
+    
+    position:absolute;
+    left:100%;
+    top:0;
+
+    z-index: 2;
+}
+.video-intro_secondTransitionPanelStart__CXWrH{
+    animation:video-intro_secondTransition__kTUWq 1.5s !important;
+    animation-delay: 0.7s;
+}
+@keyframes video-intro_secondTransition__kTUWq{
+    0%{
+       left:100%; 
+    }
+    50%{
+        left:0%;
+    }
+    100%{
+        left:-100%;
+    }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/button-variants/button-square/button-square.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+.button-square_buttonSquare__rYMA6{
+    height: 100%;
+    padding: 5px;
+    aspect-ratio: 1 / 1 !important;
+    
+    background-color: transparent;
+
+    border:none;
+    border-radius: 1.5px;
+    font-size: 1.2rem;
+    /* font-style: italic; */
+    font-weight: 300;
+    letter-spacing: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    &:hover{
+        cursor: pointer;
+        color:var(--color-accent);
+        background-color: var(--background-tertiary);
+        /* box-shadow: var(--box-shadow-outset-3); */
+    }
+    &:active{
+        background-color: transparent;
+        
+    }
+    &:active > .button-square_buttonSquareActive__XQO5m{
+        top: var(--top1) !important;
+        left: var(--left1) !important;
+    }
+}
+.button-square_buttonSquareContent__rh_An{
+    position: relative;
+    z-index: 52;
+}
+.button-square_buttonSquareActive__XQO5m{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-accent);
+    border-radius: 1.5px;
+
+    position: absolute;
+    top: var(--top0);
+    left: var(--left0);
+    z-index: 51;
+
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/button-variants/button-rectangle/button-rectangle.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************/
+.button-rectangle_buttonRectangle__07QgT{
+    height: 100%;
+    width: 100%;
+    color:var(--color);
+    padding: 10px;
+    background-color: transparent;
+
+    border:none;
+    border-radius: 1.5px;
+    font-size: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    &:active > .button-rectangle_buttonRectangleActive__O8V07{
+        top: var(--top1) !important;
+        left: var(--left1) !important;
+    }
+}
+.button-rectangle_buttonRectangleContent__mRv2e{
+    color: var(--color) !important;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 52;
+    &:hover{
+        cursor: pointer;
+        color:var(--color-accent) !important;
+    }
+    &:active{
+        background-color: transparent;
+        color:var(--color) !important;
+    }
+}
+.button-rectangle_buttonRectangleActive__O8V07{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-accent);
+    border-radius: 1.5px;
+
+    position: absolute;
+    top: var(--top0);
+    left: var(--left0);
+    z-index: 51;
+}
+.button-rectangle_buttonRectangleContentActive__8KZ8J{
+    color: var(--color-accent);
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/button-variants/button-simple-underline/button-simple-underline.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.button-simple-underline_button__6fh0_{
+    color:var(--color);
+    background-color: transparent;
+    border: none;
+    position: relative;
+
+    &::after{
+        content:"";
+        position: absolute;
+        width: 100%;
+        top:100%;
+        left:0;
+        border-bottom: 1px solid var(--color);
+    }
+    &:hover::after{
+        top:110%;
+        border-bottom: 1px solid var(--color-accent);
+    }
+    &:hover{
+        color:var(--color-accent);
+        cursor: pointer;
+    }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/button-variants/button-simple-light/button-simple-light.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************/
+.button-simple-light_button__VXV2M{
+    background-color: transparent;
+    color:var(--color);
+    border:none;
+    padding: 7px 10px;
+
+    font-size: min(20px,4vw);
+
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width:50%;
+        height:50%;
+        top:var(--top);
+        left:var(--left);
+        transform: translateX(-50%) translateY(-50%);
+
+        background-color: var(--background-hover);
+        filter:blur(20px);
+        transition: opacity 0.15s,filter 0.15s;
+        opacity: 0;
+    }
+
+    &:hover::before{
+        opacity: 1;
+    }
+
+    &:hover{
+        color:var(--color-accent);
+        cursor: pointer;
+    }
+}
+.button-simple-light_buttonActive__4t8eU::before{
+    opacity: 1;
+    filter:blur(20px);
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/button-variants/button-default/button-default.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************/
+.button-default_button__Qfk98{
+    background-color: transparent;
+    color:var(--color);
+    border:none;
+    padding: 7px 10px;
+
+    font-size: min(20px,4vw);
+
+    position: relative;
+
+    &:hover{
+        color: var(--color-accent);
+        cursor: pointer;
+    }
+}
+.button-default_buttonActive__I6wCW{
+    color:var(--color-accent);
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/side-menu/side-menu.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.side-menu_sideMenu__kusTx{
+    position: fixed;
+    top: 0;
+    left: 0;
+    color:var(--color);
+
+    height: 100vh;
+    width: min(100%,400px);
+    background-color: var(--background);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: transform 0.5s;
+    z-index: 1002;
+
+    & a{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    & img{
+        width: 100%;
+    }
+}
+.side-menu_sideMenuClose__L3LVL{
+    transform: translateX(-100%);
+}
+.side-menu_overlay__1LpaG{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    z-index: 1001;
+    opacity: 1;
+}
+.side-menu_overlayClose__ish4t{
+    width: 0;
+    opacity: 0;
+}
+.side-menu_container__L3GFX{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.side-menu_header__77XyN{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+
+    & h2{
+        color:var(--color);
+    }
+
+    & svg{
+        height: 36px;
+        width: 36px;
+        color:var(--color);
+    }
+    & svg:hover{
+        cursor: pointer;
+        color:var(--color-accent);
+    }
+}
+.side-menu_list__RNcz9{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 0 10px;
+
+    & a{
+        font-weight: 700;
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        text-indent:10px;
+    }
+
+    & dt{
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px dotted var(--color);
+        color: var(--color);
+        &:hover > a{
+            color: var(--color-accent);
+            cursor: pointer;
+        }
+    }
+}
+
+.side-menu_language__lZueq{
+    margin-top: 50px;
+
+    & button{
+        background-color: transparent;
+        border: none;
+        color: var(--color);
+        font-size: min(1.5vw,18px);
+    
+        &:hover{
+            color:var(--color-accent);
+            cursor: pointer;
+        }
+    }
+} 
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/start-navbar/start-navbar.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+.start-navbar_navbar__PbT97{
+    --heightNavbar:calc(100vh / 3);
+    width: 100vw;
+    height: var(--heightNavbar);
+    padding: 0 10px;
+    background-color:color-mix(in oklab ,var(--background-secondary) 80%, #00000080 20%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 5vw;
+
+    position: fixed;
+    top:0;
+    left:0;
+
+    overflow: hidden;
+    transition: height 0.5s;
+    animation: start-navbar_logoOverlay__5nsBG 6s cubic-bezier(0.5, 0, 0.5, 1);
+    z-index: 1000;
+}
+@keyframes start-navbar_logoOverlay__5nsBG{
+    0%{
+        height:100vh;
+    }
+    40%{
+        height:100vh;
+    }
+    60%{
+        height: var(--heightNavbar);
+    }
+}
+.start-navbar_navbarLogo__RX4yj{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position:relative;
+    z-index: 30;
+
+    & img{
+        width: var(--logoWidth);
+        object-fit: contain;
+        animation: start-navbar_logoAppearImage__qtVvy 3s cubic-bezier(0.5, 0, 0.5, 1);
+        z-index: 2;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    
+        width: 100px;
+        border-radius: 50%;
+        background-color: var(--background-hover);
+        aspect-ratio: 1 / 1;
+        filter: blur(110px);
+        animation: start-navbar_logoBackLight__KtA3p 3s cubic-bezier(0.5, 0, 0.5, 1);
+        z-index: 1;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    
+        background: radial-gradient(circle, rgb(76, 228, 252) 0%, var(--color-accent) 51%, var(--color-accent) 100%);
+        box-shadow: 0 0 0px 0px var(--color-accent);
+    
+        border-radius: 50%;
+        z-index: 100;
+        opacity: 0;
+    
+        animation: start-navbar_logoAppearLight__K3y_s 3s cubic-bezier(0.5, 0, 0.5, 1);
+    }
+}
+@keyframes start-navbar_logoAppearImage__qtVvy{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 0;
+    }
+    70%{
+        width: var(--logoWidth);
+    }
+}
+@keyframes start-navbar_logoBackLight__KtA3p{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 0;
+    }
+    70%{
+        width: 100px;
+    }
+}
+@keyframes start-navbar_logoAppearLight__K3y_s{
+    0%{
+        aspect-ratio: 1 / 1 ;
+        width: 0;
+        opacity: 1;
+    
+    }
+    20%{
+        aspect-ratio: 1 / 1 ;
+        width: 20px;
+        box-shadow: 0 0 10px 2px var(--color-accent);
+        opacity: 1;
+    }
+    30%{
+        aspect-ratio: 1 / 1 ;
+        width: 0;
+        opacity: 1;
+    }
+    50%{
+        aspect-ratio: 1 / 1 ;
+        width: 0;
+        opacity: 1;
+    }
+    70%{
+        width: 410px;
+        aspect-ratio: 1 / 1 ;
+        box-shadow: 0 0 100px 1px var(--color-accent);
+        opacity: 1;
+    }
+    100%{
+        width: 100vw;
+        aspect-ratio: 1 / 1 ;
+        box-shadow: 0 0 1000px 200px var(--color-accent);
+        opacity: 0;
+    }
+}
+
+.start-navbar_navbarLeanguage__iXiOF{
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+    color:var(--color);
+    font-size: min(14px,5vw);
+
+    position:fixed;
+    top:10px;
+    left:calc(100vw - 20px);
+    transform: translateX(-100%);
+
+    animation:start-navbar_leanguageAppear__YJbwn 4s cubic-bezier(0.5, 0, 0.5, 1);
+    z-index: 60;
+
+    & button{
+        font-size: min(14px,5vw);
+    }
+}
+@keyframes start-navbar_leanguageAppear__YJbwn{
+    0%{
+        transform: translateY(-100px) translateX(-100%);
+    }
+    80%{
+        transform: translateY(-100px) translateX(-100%);
+    }
+    100%{
+        transform: translateY(0px) translateX(-100%);
+    }
+}
+
+.start-navbar_pageType__U8AVk{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+    opacity: 1;
+    animation: start-navbar_buttonsAppear__s59aA 4s cubic-bezier(0.5, 0, 0.5, 1);
+}
+.start-navbar_pageTypeClose__asQsq{
+    visibility: collapse;
+    height: 0px;
+}
+@keyframes start-navbar_buttonsAppear__s59aA{
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.start-navbar_menuButton__bR1qE{
+    position: absolute;
+    top:calc(100vh / 20);
+    left:10px;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    color:var(--color);
+    background-color: transparent;
+    
+    border:none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 60;
+    transition: transform 0.5s,border-color 0.5s;
+
+    & svg{
+        height: 40px;
+        width: 40px;
+    
+        &:hover{
+            cursor: pointer;
+            border-color:transparent;
+        }
+        &:hover > svg{
+            transform: scale(1.1);
+        }
+    }
+}
+.start-navbar_menuButtonClose__ghPbn{
+    transition: 0s;
+    visibility: collapse;
+    height: 0;
+}
+
+
+
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/more-info/more-info.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.more-info_moreInfo__5bG55{
+    width: 60%;
+    height: 40px;
+    color:var(--color);
+    position: fixed;
+    top:90%;
+    left:50%;
+    transform: translateX(-50%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: -100px;
+
+    background-color:color-mix(in oklab ,var(--background-secondary) 80%, #00000080 20%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-radius: 4.5px;
+    z-index: 10;
+}
+.more-info_linkButton__gAKFP{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        color:var(--color-accent);
+    }
+    &:active{
+        color:var(--color);
+    }
+}
+.more-info_historyModalParagraph__hHc7n,.more-info_historyModalCapList__qASPK{
+    text-indent: 20px;
+}
+.more-info_historyModalParagraph__hHc7n span,.more-info_historyModalCapList__qASPK{
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+.more-info_modal___PYZa{
+    position: fixed;
+    bottom:120px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color:color-mix(in oklab ,var(--background-secondary) 70%, #00000080 30%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-radius: 4px;
+    padding: 30px 20px;
+    color:var(--color);
+
+    opacity: 0;
+    z-index: 100;
+}
+.more-info_modalOpen__7InnF{
+    opacity: 1 !important;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/pages/start-page/start-page.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+
+/* ::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important; 
+    visibility: hidden !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent !important;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent !important; 
+  } */
+   .start-page_container__N9mbC{
+    width: 100vw;
+    height: calc(100vh + 10px);
+    overflow: hidden;
+    position: relative;
+   }
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/events/events.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+
+.events_container__G0h7w{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    grid-template-rows:repeat(var(--quantity),200px);
+    gap: 20px;
+
+    padding: 0 30px;
+
+    position:relative;
+}
+.events_decorative1__vmGvg{
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: min(70%,700px);
+    aspect-ratio: 1 / 1;
+    background-color: color-mix(in oklab, var(--color-accent) 95%, rgb(0,0,0) 5%);
+    border-radius: 40%;
+
+    box-shadow: 0 0 0px 50px var(--color-accent);  
+    z-index: 0;
+    filter: blur(1000px);
+}
+.events_decorative2__KRgF_{
+    position: absolute;
+    top:50%;
+    left: -10%;
+
+    width: min(30%,500px);
+    aspect-ratio: 1 / 1;
+    background-color: var(--color-accent);
+    border-radius: 40%;
+
+    box-shadow: 0 0 0px 35px color-mix(in oklab, var(--color-accent) 70%, rgb(0,0,0) 30%);
+    z-index: 0;
+    filter: blur(90px);
+}
+.events_card__qqYyQ{
+    width: 100%;
+    height: 100%;
+    grid-row-start: var(--rowStart);
+    grid-row-end: var(--rowEnd);
+    border-radius: 4px;
+    overflow: hidden;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(80%);
+
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.336);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--background-transparent);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        z-index: 2;
+    }
+    & h3{
+        text-align: center;
+        padding:10px;
+        color:var(--color);
+        border-radius: 4px;
+        z-index: 3;
+        font-size: 35px;
+    }
+
+    & a{
+        position: absolute;
+        content: "";
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+
+    &:has(a:hover) h3,&:has(a:hover) .events_countdown__3E0HC{
+        color:var(--color-accent);
+    }
+}
+.events_countdown__3E0HC{
+    padding:10px;
+    color:var(--color);
+    border-radius: 4px;
+    font-size: 20px;
+    z-index: 3;
+}
+
+@media (max-width:720px){
+    .events_container__G0h7w{
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(calc(var(--quantity) - 1),400px); 
+        /* Norrys */
+    }
+    .events_card__qqYyQ{
+        grid-row-start: unset;
+        grid-row-end: unset;
+    }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/pages/racing/racing.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+
+.racing_container__pJBuI{
+    width: 100vw !important;
+
+    color:var(--color);
+    background-color: var(--background);
+
+}
+.racing_content__E9nmG{
+    display: flex;
+    align-items: stretch;
+
+} 
+.racing_rightSection__89iMn{
+    height: 100% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+    row-gap: 200px;
+}
+.racing_leftSection__gMohg{
+    flex: 1;
+    min-height: 100% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.racing_menuContainer__ZbDcK{
+    height: 100%;
+    width: 50%;
+    border-left: 2px dashed var(--color);
+    padding-left: 10px;
+    font-size: 18px;
+}
+.racing_menuButton__OPyMQ{
+    position: fixed;
+    top:20px;
+    left: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    color:var(--color);
+
+    background-color: color-mix(in oklab, var(--background-secondary) 90%, rgba(0,0,0,0) 10%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: none;
+    border-radius: 4px;
+    z-index: 50 ;
+
+    &:hover{
+        color:var(--color-accent);
+        cursor: pointer;
+    }
+
+    & svg{
+        width: 35px;
+        height: 35px;
+    }
+}
+.racing_menu__43ePT{
+    position: sticky;
+    padding-left: 8px;
+    font-size: 22px;
+
+    &:hover{
+        cursor: pointer;
+        color: var(--color-accent);
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top:50%;
+        left:0;
+        transform: translateX(calc(-100% - 2px)) translateY(-50%);
+        width: 18px;
+        aspect-ratio: 1/1;
+        border-radius: 40%;
+        background-color: var(--color-accent);
+        box-shadow: 0 0 0px 3px color-mix(in oklab, var(--color-accent) 70%, rgb(0,0,0) 30%);
+    }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/about-fs/about-fs.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.about-fs_container__43OJt{
+    width: 90%;
+
+    & article{
+        margin-top: 5px;
+        width: 100%;
+        padding: 30px;
+        background-color: var(--background-tertiary);
+        border-radius: 4px;
+        text-indent: 10px;
+
+        overflow: hidden;
+
+        & span{
+            color:var(--color-accent);
+            font-weight: 700;
+        }
+    }
+     
+    & h3{
+        color:var(--color-accent);
+        font-weight: 700;
+    }
+    
+}
+.about-fs_pieContainer___6SJS{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    column-gap: 10px;
+
+    & dt{
+        font-size: 16px;
+    }
+
+    & ul{
+        margin-left: 30px;
+    }
+}
+.about-fs_pieChart__LcRIU{
+    width: min(80%,400px);
+}
+
+.about-fs_explainContainer__9K8nf{
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+}
+
+.about-fs_articleClose__gyPoA{
+    height: 0px !important;
+    padding: 0px !important;
+}
+
+@media screen and (max-width:800px){
+    .about-fs_explainContainer__9K8nf{
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-fs_pieContainer___6SJS{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:530px){
+    .about-fs_explainContainer__9K8nf{
+        grid-template-columns: 1fr ;
+    }
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/dropdown-header/dropdown-header.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************/
+.dropdown-header_header__EgIwJ{
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+
+    border-radius: 4px;
+    background-color: var(--color-accent);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    & svg{
+        width: 40px;
+        height: 40px;
+    }
+
+    &:hover{
+        background-color: white;
+        color:var(--color-accent);
+        cursor: pointer;
+    }
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/latest-news/latest-news.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+.latest-news_container__Sl_Oj {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+
+.latest-news_card__JCKFM {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--background-tertiary);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+
+  & img {
+    width: 100%;
+    height: 66%;
+
+    object-fit: cover;
+  }
+}
+.latest-news_card__JCKFM a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  }
+.latest-news_card__JCKFM a:hover {
+    background: linear-gradient(
+      135deg,
+      rgba(5, 143, 154, 0.3) 18%,
+      rgba(63, 134, 180, 0.098) 41%,
+      rgba(0, 212, 255, 0.2) 71%
+    );
+  }
+.latest-news_info__VV1D2 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  & svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+.latest-news_description__w1m8v {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+
+  & h3 {
+    color: var(--color-accent);
+    padding: 0 0 10px 0;
+  }
+
+  & span {
+    overflow: hidden; /* Ascunde textul care depășește limita */
+    text-overflow: ellipsis; /* Adaugă "..." la sfârșitul textului tăiat */
+    display: -webkit-box; /* Utilizat pentru a crea un container flexibil */
+    -webkit-box-orient: vertical; /* Setează orientarea în verticală */
+    -webkit-line-clamp: 3;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .latest-news_container__Sl_Oj {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/gallery/gallery.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.gallery_container__txxZc{
+    width: 90%;
+    padding-bottom: 30px;
+}
+.gallery_imgContainer__qmxqx{
+    columns:250px;
+    margin-top: 7px;
+    width: 100%;
+
+    & img{
+        width: 100%;
+        margin-bottom: 1em;
+        border-radius: 4px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.gallery_imgContainerClose__Zi9lh{
+    height: 0px !important;
+    overflow: hidden;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/masonry-layout/masonry-layout.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************/
+
+.masonry-layout_imgContainer__qL_kJ{
+    columns:var(--widthColumns);
+    margin-top: 7px;
+    width: 100%;
+
+    & img{
+        width: 100%;
+        margin-bottom: 1em;
+        border-radius: 4px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.masonry-layout_imgContainerClose__afs8L{
+    height: 0px !important;
+    overflow: hidden;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/intro/intro.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.intro_introImage__CBIB7 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  position: relative;
+
+  overflow: hidden;
+  z-index: 0;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 30%,
+      var(--background) 100%
+    );
+    z-index: 2;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, var(--background) 100%);
+    background-size: 3px 3px;
+    z-index: 1;
+    
+  }
+}
+.intro_menuButton__Ql6O0{
+    position: fixed;
+    top:20px;
+    left: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    color:var(--color);
+
+    background-color: color-mix(in oklab, var(--background-secondary) 90%, rgba(0,0,0,0) 10%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: none;
+    border-radius: 4px;
+    z-index: 50 ;
+
+    &:hover{
+        color:var(--color-accent);
+        cursor: pointer;
+    }
+
+    & svg{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/navbar/navbar.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.navbar_navbarScrolled__KaAX8{
+    background-color: color-mix(in oklab, var(--background-secondary) 70%, rgba(0,0,0,0) 30%) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    height: 100px !important;
+
+    & a{
+        height: 90% !important;
+    }
+}
+.navbar_navbar__1v1x3{
+    background-color: var(--background-secondary);
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top:0;
+    z-index: 99;
+
+    & a{
+        max-width: 600px;
+        height: 50%;
+
+        & img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & section{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 20px;
+
+        height: 100%;
+        width: 50%;
+    }
+}
+.navbar_pages__IiA8Q{
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    flex: 1;
+}
+.navbar_buttons__CBTMt{
+    & a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}
+.navbar_language__QB9Xc{
+    color:var(--color);
+    & button{
+        background-color: transparent;
+        border: none;
+        color: var(--color);
+        font-size: min(1.5vw,18px);
+    
+        &:hover{
+            color:var(--color-accent);
+            cursor: pointer;
+        }
+    }
+} 
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/footer/footer.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.footer_footer__PZD4d {
+  width: 100%;
+  min-height: 400px;
+  padding: 30px;
+  background-color: var(--background-secondary);
+  color: var(--color);
+
+  box-shadow: 0 -2px 3px var(--background-secondary);
+
+  display: flex;
+  flex-direction: column;
+}
+.footer_content__Tca3x {
+  width: 100%;
+  flex: 1;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+.footer_logo__pe9i3 {
+  width: min(30%, 300px);
+  align-self: center;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.footer_media__rBtja,
+.footer_contact___J22L {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  & h2 {
+    color: var(--color-accent);
+  }
+
+  & a {
+    display: flex;
+    align-items: end;
+    column-gap: 10px;
+    transition: 0s;
+
+    & svg {
+      width: 24px;
+      height: 24px;
+      transition: 0s;
+    }
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}
+.footer_contact___J22L {
+  text-align: end;
+
+  & a {
+    justify-content: flex-end;
+    align-items: center !important;
+
+    & div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.footer_map__ldShm{
+    width: min(30%,600px);
+    
+
+    & iframe{
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 4px;
+    }
+}
+.footer_otherInfo__T_BFl{
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    color:rgb(126, 126, 126);
+}
+
+@media screen and (max-width:1000px){
+    .footer_content__Tca3x{
+        flex-direction: column;
+    }
+    .footer_logo__pe9i3{
+        width: unset;
+        height: 100px;
+    }
+    .footer_map__ldShm{
+        width: 100%;
+    }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/pages/history/history.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.history_sliderContainer__ywlCQ{
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden !important ; */
+    /* background: radial-gradient(circle, var(--color-accent) 0%, var(--background-secondary) 20%, var(--background-secondary) 96%, var(--color-accent) 100%); */
+    
+
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.history_container__fK3jE{
+    width: 100vw;
+    overflow: hidden;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/history-slider/history-slider.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************/
+.history-slider_container__a_vcP {
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    filter: blur(1000px);
+
+    background-color: var(--color-accent);
+    z-index: 0;
+  }
+}
+.history-slider_sliderContainer__YMSDU {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.history-slider_slider__jN4qA {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: min(max(100px, 6vw), 300px);
+  aspect-ratio: 2 / 3;
+  transform-style: preserve-3d;
+  transform: translateX(-50%) perspective(1000px) rotateX(-16deg);
+  transition: transform 0s;
+
+  z-index: 10;
+  user-select: none;
+
+  &:hover .history-slider_card__Lmq40 {
+    filter: grayscale(100%);
+  }
+  &:hover .history-slider_back__7OG4f {
+    filter: grayscale(100%);
+  }
+
+  &:active {
+    animation-play-state: paused;
+  }
+}
+.history-slider_sliderRotate__xhuOn {
+  animation-play-state: running !important;
+}
+
+.history-slider_back__7OG4f {
+  position: absolute;
+  backface-visibility: hidden;
+  inset: 0 0 0 0;
+  background: linear-gradient(
+    141deg,
+    var(--color-accent) 0%,
+    var(--background-secondary) 20%,
+    var(--background-secondary) 80%,
+    var(--color-accent) 100%
+  );
+  transform: rotateY(calc(var(--positionBack) * (360deg / var(--quantity))))
+    translateZ(min(max(550px, 18vw), 800px)) rotateX(5deg) rotateY(180deg);
+
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0px 0px 3px var(--color-accent);
+
+  overflow: hidden;
+
+  & img{
+    width: 200%;
+    transform: rotateZ(300deg);
+  }
+}
+.history-slider_card__Lmq40 {
+  position: absolute;
+  inset: 0 0 0 0;
+  background: linear-gradient(
+    141deg,
+    var(--color-accent) 0%,
+    var(--background-secondary) 20%,
+    var(--background-secondary) 80%,
+    var(--color-accent) 100%
+  );
+  transform: rotateY(calc(var(--position) * (360deg / var(--quantity))))
+    translateZ(min(max(550px, 18vw), 800px)) rotateX(5deg);
+
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px var(--color-accent);
+  color: var(--color);
+  padding: 10px;
+  perspective: 1000px;
+  backface-visibility: hidden;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  &::after {
+    position: absolute;
+    inset: 0 0 0 0;
+    content: "";
+    z-index: 100;
+  }
+
+  &:hover {
+    filter: grayscale(0%) !important;
+    transform: rotateY(calc(var(--position) * (360deg / var(--quantity))))
+      translateZ(min(max(550px, 18vw), 800px)) scale(1.1) rotateX(5deg);
+    color: var(--color-accent) !important;
+    box-shadow: 0px 0px 3px 2px var(--color-accent);
+  }
+}
+.history-slider_imageContainer__y7gzA {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 9;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+
+    border-left: 2px solid var(--color);
+    border-bottom: 1px solid var(--color);
+    z-index: 10;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+
+    border-right: 2px solid var(--color);
+    border-bottom: 1px solid var(--color);
+    z-index: 10;
+  }
+}
+.history-slider_infoContainer__QNIxL {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+  font-size: min(3vw, 10px);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+
+    border-left: 2px solid var(--color);
+    border-top: 1px solid var(--color);
+    z-index: 10;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+
+    border-right: 2px solid var(--color);
+    border-top: 1px solid var(--color);
+    z-index: 10;
+  }
+}
+
+.history-slider_cup__fXb2X {
+  position: absolute;
+  left: 50%;
+  top: max(10%, 150px);
+  transform: translateX(-50%);
+
+  width: calc((100vw + 100vh)/2);
+  aspect-ratio: 1/1;
+
+  filter: brightness(var(--brightness));
+  z-index: 1;
+
+  user-select: none;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/modal/modal.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.modal_container__a_mLC{
+    position:fixed;
+    inset: 0 0 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0s;
+    z-index: 100;
+}
+.modal_overlay__b2mn2{
+    position: fixed;
+    inset: 0 0 0 0;
+    background-color: color-mix(in oklab, var(--background-secondary) 70%, rgba(0,0,0,0) 30%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 0;
+}
+.modal_containerClose__kl4xK{
+    visibility: hidden;
+}
+.modal_content__7_9Tb{
+    width: max(500px,60%);
+    height: max(750px,80%);
+    background-color: transparent;
+    z-index: 100;
+    color:var(--color);
+
+    & header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px  ;
+        background-color: var(--background);
+        border-radius: 4px;
+
+        & svg{
+            width: 40px;
+            height: 40px;
+            transition: 0s !important;
+
+            &:hover{
+                cursor: pointer;
+                color:var(--color-accent);
+            }
+        }
+    }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/history-slider/inner-modal/inner-modal.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************/
+.inner-modal_container__fi_yk {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  margin-top: 10px;
+
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  z-index: 100;
+}
+.inner-modal_imageContainer__o_1FH {
+  background: linear-gradient(
+    141deg,
+    var(--color-accent) 0%,
+    var(--background-secondary) 20%,
+    var(--background-secondary) 80%,
+    var(--color-accent) 100%
+  );
+  grid-row: span 3;
+  grid-column: span 2;
+
+  border-radius: 4px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  padding: 10px;
+
+  box-shadow: 0 0 2px 1px var(--color-accent),
+    inset 0 0 2px 1px var(--color-accent);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.inner-modal_descriptionContainer__u_5zL {
+  background-color: var(--background);
+  grid-column: span 2;
+  grid-row: span 3;
+
+  box-shadow:  0 0 2px 1px var(--color-accent),inset 0 0 2px 1px var(--color-accent);
+  border-radius: 4px;
+
+  padding: 10px;
+  z-index: 5;
+  overflow: hidden;
+  margin: 0 0px 30px 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+
+  & p {
+    font-size: 20px;
+    width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: left;
+    text-indent: 10px;
+  }
+  & p::-webkit-scrollbar {
+    width: 600px; /* Lățimea scroll-barului vertical */
+    height: 12px; /* Înălțimea scroll-barului orizontal */
+  }
+
+  & p::scrollbar-track {
+    background: transparent; /* Culoarea fundalului scroll-barului */
+    border-radius: 10px; /* Rounding for track */
+  }
+
+  & p::scrollbar-thumb {
+    background: var(--color-accent); /* Culoarea thumb-ului scroll-barului */
+    border-radius: 10px; /* Rounding for thumb */
+  }
+
+  & p::scrollbar-thumb:hover {
+    background: color-mix(
+      in oklab,
+      var(--color-accent) 70%,
+      rgb(0, 0, 0) 30%
+    ); /* Culoarea thumb-ului la hover */
+  }
+}
+.inner-modal_mediaContainer__r5ikb {
+  background-color: transparent;
+  grid-row: span 3;
+
+  display: grid;
+  grid-template-rows: repeat(auto-fill,1fr);
+
+  & a{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    & svg{
+        width: 35px;
+        height: 35px;
+
+        position: relative;
+        transition: 0s;
+
+        &:hover{
+            color:var(--color-accent);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top:50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            filter: blur(100px);
+        }
+        &:hover::after{
+            background-color: var(--color-accent);
+        }
+    }
+  }
+}
+
+.inner-modal_tabsContainer__yyHdR {
+  background-color: var(--background);
+  grid-column: span 3;
+  grid-row: span 3;
+
+  box-shadow: 0 0 2px 1px var(--color-accent),inset 0 0 2px 1px var(--color-accent);
+  border-radius: 4px;
+  z-index: 1;
+
+  margin-left: 10px;
+  padding: 10px;
+}
+.inner-modal_tabs__wz8WA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: color-mix(in oklab, var(--background) 70%, rgba(0,0,0,0) 30%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.inner-modal_tabContent__rgse8{
+  width: 100%;
+  height: calc(100% - 40px);
+  padding: 10px;
+  overflow-y: auto;
+  background-color: var(--background);
+}
+
+.inner-modal_teamContent__5YdWN{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: var(--background-tertiary);
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 1px var(--color-accent),inset 0 0 2px 1px var(--color-accent);
+
+  & img{
+    flex: 2 !important;
+    width: 100% !important;
+    object-fit: contain !important;
+  }
+}
+.inner-modal_teamInfo__84Aub{
+  flex: 1;
+  width: 100%;
+
+  & h3{
+    color: var(--color-accent);
+    margin-bottom: 5px;
+  }
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/grid-layout/grid-layout.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+
+.grid-layout_imgContainer__9Ft6d{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,var(--widthColumns));
+    gap:30px;
+
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-bottom: 1em;
+        border-radius: 4px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.grid-layout_imgContainerClose__QOA6o{
+    height: 0px !important;
+    overflow: hidden;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/pages/team/team.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.team_container___GLql{
+    width: 100vw;
+    padding-bottom: 30px;
+}
+.team_content__bB9fR{
+    width: 100%;
+    margin-top: 200px;
+    padding: 0 20px;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/team-man-pose/team-man-pose.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
+.team-man-pose_poseContainer__BmL56 {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.team-man-pose_treeColumns__6y_3e {
+  background-color: red !important;
+}
+.team-man-pose_treeColumns__6y_3e + * {
+  background-color: green;
+}
+.team-man-pose_content__iioik {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  align-self: center;
+  justify-self: center;
+
+  background-color: var(--background-secondary);
+  border: 1px solid var(--color-accent);
+  overflow: hidden;
+  border-radius: 4px;
+}
+.team-man-pose_contentEffect__h2sCU {
+  width: 300px;
+  aspect-ratio: 2/3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.team-man-pose_info__Y402h {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: var(--color);
+  & h2,
+  & h3 {
+    text-align: center;
+    color: var(--color-accent);
+  }
+  z-index: 1;
+}
+.team-man-pose_imgContainer__qd5id {
+  width: 100%;
+  height: 50%;
+  flex: 2;
+  overflow: hidden;
+  position: relative;
+
+  border-radius: 5px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    border-radius: 4px;
+    box-shadow: inset 0 0 10px 10px var(--background-secondary);
+  }
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/pages/contact/contact.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.contact_content__RYBz5{
+    width: 100vw;
+    min-height: 650px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap:200px;
+    padding: 60px;
+    & h2{
+        color: var(--color-accent);
+        width: 100%;
+        text-align: center;
+    }
+}
+.contact_formContainer__bOkAr{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+
+    & form{
+        width: 70%;
+        padding: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 10px;
+        
+        & label{
+            text-indent: 10px;
+            width: 100%;
+            font-size: 18px;
+            color: var(--color);
+        }
+        & label:not(:first-of-type){
+            margin-top: 40px;}
+        & input, & textarea{
+
+            color: var(--color);
+            padding: 10px;
+            font-size: 16px;
+            background-color: var(--background-secondary);
+
+            border: none;
+            border-bottom: 2px solid var(--color-accent);
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            outline: none;
+
+        }
+        & input{
+            width: 100%;
+            height: 50px;
+        }
+        & textarea{
+            max-width: 100%;
+            min-width: 100%;
+            min-height: 200px;
+            max-height: 400px;
+        }
+    }
+}
+.contact_recrutingContainer__gqI_T{
+    flex:3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & p{
+        padding: 10px;
+        text-indent: 30px;
+        color: var(--color);
+    }
+}
+.contact_posterContainer__Nz1o9{  
+    width: 100%;
+    min-height: 650px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    border-radius: 4px;
+    box-shadow: inset 0 0 3px 10px var(--background);
+}
+
+@media (max-width:720px){
+    .contact_content__RYBz5{
+        flex-direction: column;
+        row-gap: 40px;
+        padding: 20px;
+    }
+    .contact_formContainer__bOkAr{
+        width: 100%;
+
+        & form{
+            width: 100%;
+        }
+    }
+    .contact_recrutingContainer__gqI_T{
+        flex:unset;
+        width: 100%;
+        & section{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .contact_posterContainer__Nz1o9{
+        width: 80%;
+        height: 700px;
+    }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/pages/admin/admin.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+
+.admin_inputContainer__auUh8 {
+  & p,
+  & input,
+  & label {
+    color: var(--color);
+    display: block;
+  }
+  & input{
+    background-color: var(--background-secondary);
+    width: 40%;
+    height: 30px;
+  }
+  & legend{
+    color: var(--color-accent);
+    font-size: 20px;
+    padding: 10px;
+  } 
+  & fieldset {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/pages/admin/password-admin/password-admin.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+.password-admin_container__LszXj {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  
+    & form {
+      width: 70%;
+      padding: 100px;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  
+      & label {
+        color: var(--color);
+      }
+      & input {
+        width: 100%;
+        padding: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/pages/admin/racing-page-admin/events-admin/events-admin.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************/
+.events-admin_eventsContainer__bxa2A {
+    background-color: var(--background-tertiary);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    border: 2px solid var(--color);
+  }
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/pages/admin/racing-page-admin/formula-student-admin/formula-student-admin.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.formula-student-admin_formulaContainer__Lh7ac {
+    background-color: var(--background-tertiary);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    border: 2px solid var(--color);
+
+    & textarea{
+        color:var(--color);
+        background-color: var(--background-secondary);
+        max-width: 90vw;
+        min-width: 10vw;
+        min-height: 50px;
+    }
+  }
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/pages/admin/racing-page-admin/racing-page-admin.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
+.racing-page-admin_container__Y6mC9{
+
+    & h1{
+        color:var(--color);
+    }
+}
