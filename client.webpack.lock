@@ -1,0 +1,4 @@
+{
+  "http://localhost:3000/video-intro.mp4": { "integrity": "sha512-rAGBSc5lSx4ZuMn9R6/J9uVQ52CwR5acQLjd3OfY5xqLeHsTWWBIM7bdXk6dXd0ILtUHQzheYuQP650UNiu9EA==", "contentType": "video/mp4" },
+  "version": 1
+}
