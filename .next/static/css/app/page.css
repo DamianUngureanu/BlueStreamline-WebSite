@@ -62,7 +62,7 @@
     position:absolute;
     left:100%;
     top:0;
-    z-index: 1;
+    z-index: 4;
 }
 .video-intro_firstTransitionPanelStart__Il818{
     animation:video-intro_firstTransition__uECja 1.5s !important;
@@ -91,7 +91,7 @@
     left:100%;
     top:0;
 
-    z-index: 2;
+    z-index: 5;
 }
 .video-intro_secondTransitionPanelStart__CXWrH{
     animation:video-intro_secondTransition__kTUWq 1.5s !important;
@@ -320,7 +320,7 @@
 
     height: 100vh;
     width: min(100%,400px);
-    background-color: var(--background);
+    background-color: var(--background-secondary);
 
     display: flex;
     flex-direction: column;
@@ -439,9 +439,7 @@
     width: 100vw;
     height: var(--heightNavbar);
     padding: 0 10px;
-    background-color:color-mix(in oklab ,var(--background-secondary) 80%, #00000080 20%);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background-color:var(--background-secondary);
     
     display: flex;
     flex-direction: column;
@@ -699,12 +697,10 @@
     align-items: center;
     column-gap: -100px;
 
-    background-color:color-mix(in oklab ,var(--background-secondary) 80%, #00000080 20%);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background-color:var(--background-secondary);
 
     border-radius: 4.5px;
-    z-index: 10;
+    z-index: 3;
 }
 .more-info_linkButton__gAKFP{
     width: 100%;
@@ -1069,6 +1065,7 @@
 
     border-radius: 4px;
     background-color: var(--color-accent);
+    color:white;
 
     display: flex;
     justify-content: space-between;
@@ -1337,7 +1334,7 @@
         column-gap: 20px;
 
         height: 100%;
-        width: 50%;
+        width: 70%;
     }
 }
 .navbar_pages__IiA8Q{
@@ -1904,26 +1901,8 @@
 }
 
 .inner-modal_tabsContainer__yyHdR {
-  background-color: var(--background);
-  grid-column: span 3;
-  grid-row: span 3;
-
   box-shadow: 0 0 2px 1px var(--color-accent),inset 0 0 2px 1px var(--color-accent);
   border-radius: 4px;
-  z-index: 1;
-
-  margin-left: 10px;
-  padding: 10px;
-}
-.inner-modal_tabs__wz8WA{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: color-mix(in oklab, var(--background) 70%, rgba(0,0,0,0) 30%);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
 }
 .inner-modal_tabContent__rgse8{
   width: 100%;
@@ -1984,6 +1963,29 @@
     height: 0px !important;
     overflow: hidden;
 }
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/tab-buttons/tab-buttons.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+.tab-buttons_tabsContainer__0gVFr {
+    background-color: var(--background);
+    grid-column: span 3;
+    grid-row: span 3;
+  
+    z-index: 1;
+  
+    margin-left: 10px;
+    padding: 10px;
+  }
+  .tab-buttons_tabs__lHPiF{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      background-color: color-mix(in oklab, var(--background) 70%, rgba(0,0,0,0) 30%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+  }
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/pages/team/team.module.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
@@ -1993,9 +1995,66 @@
 }
 .team_content__bB9fR{
     width: 100%;
-    margin-top: 200px;
+    margin-top: 20px;
     padding: 0 20px;
 }
+.team_tabContainer__7vtqQ{
+    & button{
+        width: 60%;
+    }
+}
+.team_card__PPDh1 {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    align-self: center;
+    justify-self: center;
+  
+    background-color: var(--background-tertiary);
+    border: 1px solid var(--color-accent);
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .team_info__NsiBa {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: var(--color);
+    & h2,
+    & h3 {
+      text-align: center;
+      color: var(--color-accent);
+    }
+    z-index: 1;
+  }
+  .team_imgContainer__uhAzp {
+    width: 100%;
+    height: 50%;
+    flex: 2;
+    overflow: hidden;
+    position: relative;
+  
+    border-radius: 5px;
+  
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0 0 0 0;
+      border-radius: 4px;
+      box-shadow: inset 0 0 10px 10px var(--background-secondary);
+    }
+  }
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/team-man-pose/team-man-pose.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -2302,4 +2361,15 @@
     & h1{
         color:var(--color);
     }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/pages/news/news.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+
+.news_container__YzK9d{
+    width: 100vw !important;
+
+    color:var(--color);
+    background-color: var(--background);
+
 }

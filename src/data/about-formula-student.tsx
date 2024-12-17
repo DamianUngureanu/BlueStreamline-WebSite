@@ -47,7 +47,7 @@ export const AboutFormulaStudentData: AboutFormulaStudentType = {
       titleEN: "Efficiency",
       titleRO: "Efficiency",
       value: 100,
-      color: "#ccf2ff",
+      color: "#18c1ff",
       messageEN: "",
       messageRO: "",
       type: TestType.Dynamic,
@@ -57,7 +57,7 @@ export const AboutFormulaStudentData: AboutFormulaStudentType = {
       titleEN: "Endurance",
       titleRO: "Endurance",
       value: 325,
-      color: "#addaff",
+      color: "#6995ff",
       messageEN: "",
       messageRO: "",
       type: TestType.Dynamic,
@@ -67,7 +67,7 @@ export const AboutFormulaStudentData: AboutFormulaStudentType = {
       titleEN: "Cost Report",
       titleRO: "Raport de cost",
       value: 100,
-      color: "#bfbfbf",
+      color: "#909090",
       messageEN:
         "Students prepare a cost report for materials, processes, and assembly. Points are awarded based on the total cost and the quality of the report. In the end, they must tackle a cost-reduction challenge in the areas specified by the organizers.",
       messageRO:
@@ -79,7 +79,7 @@ export const AboutFormulaStudentData: AboutFormulaStudentType = {
       titleEN: "Business Presentation",
       titleRO: "Prezentarea afacerii",
       value: 75,
-      color: "#e6e6e6",
+      color: "#b1b1b1",
       messageEN:
         "The objective of the Business Presentation is to assess the team's ability to develop and deliver a comprehensive business plan that convinces corporate executives that the team's car design best meets the demands of the amateur market and weekend competitions.",
       messageRO:
@@ -91,7 +91,7 @@ export const AboutFormulaStudentData: AboutFormulaStudentType = {
       titleEN: "Design",
       titleRO: "Proiectare",
       value: 150,
-      color: "#fefefe",
+      color: "#8f8f8f",
       messageEN:
         "At this event, students present their knowledge of cars and engineering to a jury. The event includes multiple design rounds with increasingly difficult questions. The first round tests the fundamental knowledge of all teams, but only the best make it to the finals.",
       messageRO:

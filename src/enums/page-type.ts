@@ -3,4 +3,5 @@ export const enum PageType {
     history,
     team,
     contact,
+    news,
   }

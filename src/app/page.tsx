@@ -10,6 +10,7 @@ import Contact from "@/pages/contact";
 
 import { Events } from "@/data/events";
 import Admin from "@/pages/admin";
+import News from "@/pages/news/news";
 
 function page() {
   const [language, setLanguage] = useState<"en" | "ro">("en");
@@ -73,11 +74,28 @@ function page() {
               />
             }
           />
-          <Route path="/admin" element={<Admin 
+          <Route
+            path="/news"
+            element={
+              <News
                 selectLanguage={(value) => {
                   setLanguage(value);
                 }}
-                selectedLanguage={language}/>} />
+                selectedLanguage={language}
+              />
+            }
+          />
+          <Route
+            path="/admin"
+            element={
+              <Admin
+                selectLanguage={(value) => {
+                  setLanguage(value);
+                }}
+                selectedLanguage={language}
+              />
+            }
+          />
         </Routes>
       </Router>
     </>

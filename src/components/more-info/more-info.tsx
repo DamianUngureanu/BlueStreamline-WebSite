@@ -96,6 +96,16 @@ const MoreInfo = ({ type, selectedLanguage }: MoreInfoProps) => {
         </Button>
       </div>
     );
+  } else if (type == PageType.news) {
+    return (
+      <div className={classes.moreInfo}>
+        <Button variant={ButtonVariants.Rectangle} direction={"left"}>
+          <a href="/#/news"
+            className={classes.linkButton}>{dictionary.news}</a>
+          
+        </Button>
+      </div>
+    );
   } else if (type == PageType.contact) {
     return (
       <div className={classes.moreInfo}>

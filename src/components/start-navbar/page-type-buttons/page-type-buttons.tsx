@@ -40,6 +40,13 @@ const PageTypeButtons = ({buttonActive,selectedLanguage,setButtonActive}:PageTyp
           </Button>
           <Button
             variant={ButtonVariants.Default}
+            active={buttonActive == PageType.news}
+            onClick={() => buttonActive !== PageType.news && setButtonActive(PageType.news)}
+          >
+            {dictionary.news}
+          </Button>
+          <Button
+            variant={ButtonVariants.Default}
             active={buttonActive == PageType.contact}
             onClick={() => buttonActive !== PageType.contact && setButtonActive(PageType.contact)}
           >

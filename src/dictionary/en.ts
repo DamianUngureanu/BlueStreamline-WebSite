@@ -13,7 +13,7 @@ export enum DictionaryEN {
   contactUs = "Contact us",
   events = "Events",
   aboutFS = "About FS",
-  latestNews = "Latest News",
+  news = "News",
   FSsinse = "Formula Student since 1979",
   paragraphAboutFS = `
   Formula Student is an international engineering competition, 

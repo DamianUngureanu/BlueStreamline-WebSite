@@ -10,12 +10,14 @@ import { FaXTwitter } from "react-icons/fa6";
 import Button from "@/components/button";
 import { ButtonVariants } from "@/button-variants/buttons-variants-enum";
 import MansonryLayout from "@/components/masonry-layout";
-import { carsPartners } from "@/data/cars-partners";
+import { SponsorsData } from "@/data/sponsors";
+import { SponsorsType } from "@/types/sponsors";
 import { Cars } from "@/enums/cars";
 import { Departament } from "@/enums/departament";
 import useDictionary from "@/hooks/use-dictionary";
 import GridLayout from "@/components/grid-layout";
 import { TeamType } from "@/types/team";
+import TabButtons from "@/components/tab-buttons";
 
 interface InnerModalProps {
   car: String | null;
@@ -78,6 +80,21 @@ const InnerModal = ({
       </div>
     );
   };
+  const constructSponsors=(
+    element:SponsorsType,
+    index:number,
+    car:String|null,
+  )=>{
+    if(car == element.car)
+      return(
+      <div className={classes.teamContent}>
+        <a href={element.link} title={element.name}>
+          <img src={element.image} alt={"img" + index} />
+        </a>
+      </div>
+    )
+    else return <></>;
+  }
 
   return (
     <div className={classes.container}>
@@ -104,25 +121,12 @@ const InnerModal = ({
           <IoLogoYoutube />
         </a>
       </div>
-      <div className={classes.tabsContainer}>
-        <div className={classes.tabs}>
-          <Button
-            onClick={() => setOnTeam(true)}
-            variant={ButtonVariants.Rectangle}
-            direction={"top"}
-            active={onTeam}
-          >
-            {dictionary.team}
-          </Button>
-          <Button
-            onClick={() => setOnTeam(false)}
-            variant={ButtonVariants.Rectangle}
-            direction={"top"}
-            active={!onTeam}
-          >
-            {dictionary.partners}
-          </Button>
-        </div>
+      <TabButtons
+        buttonSelected={dictionary.team}
+        buttonsName={[dictionary.team,dictionary.partners]}
+        buttonSelect={(buttonSelect)=>{if(buttonSelect==dictionary.team)setOnTeam(true);else setOnTeam(false)}}
+        className={classes.tabsContainer}
+      >
         {onTeam ? (
           <div className={classes.tabContent}>
             <GridLayout
@@ -134,16 +138,16 @@ const InnerModal = ({
           </div>
         ) : (
           <div className={classes.tabContent}>
-            <MansonryLayout
-              images={carsPartners.map((element, index) => {
-                if (element.car.find((item) => item == car))
-                  return constructLinks(element, index);
+            
+            <GridLayout
+              images={SponsorsData.map((element, index) => {
+                  return constructSponsors(element, index, car);
               })}
               width={"100px"}
             />
           </div>
         )}
-      </div>
+      </TabButtons>
     </div>
   );
 };

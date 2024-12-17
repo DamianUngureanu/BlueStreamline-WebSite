@@ -3,9 +3,7 @@
     width: 100vw;
     height: var(--heightNavbar);
     padding: 0 10px;
-    background-color:color-mix(in oklab ,var(--background-secondary) 80%, #00000080 20%);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background-color:var(--background-secondary);
     
     display: flex;
     flex-direction: column;

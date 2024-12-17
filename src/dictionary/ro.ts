@@ -13,7 +13,7 @@ export enum DictionaryRO {
   contactUs = "Contactează-ne ",
   events = "Evenimente",
   aboutFS = "Despre FS",
-  latestNews = "Ultimele Noutăți",
+  news = "Noutăți",
   FSsinse = "Formula Student din 1979",
   paragraphAboutFS = `
     Formula Student este o competiție internațională de inginerie,

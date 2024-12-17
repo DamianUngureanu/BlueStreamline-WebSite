@@ -22,6 +22,9 @@ interface RacingProps {
 const Racing = ({ selectedLanguage, selectLanguage,events }: RacingProps) => {
   const { width, height } = useWindowDimensions();
   const { dictionary, setLanguage } = useDictionary();
+    useEffect(() => {
+      setLanguage(selectedLanguage);
+    }, [selectedLanguage]);
 
   const [eventsScroll, setEventsScroll] = useState(0);
   const [aboutFSScroll, setAboutFSScroll] = useState(0);
@@ -88,7 +91,7 @@ const Racing = ({ selectedLanguage, selectLanguage,events }: RacingProps) => {
                 className={classes.menu}
                 style={{ marginTop: aboutFSScroll + "px", top: "calc(20% + 30px)" }}
               >
-                {dictionary.latestNews}
+                {dictionary.news}
               </div>
               <div
                 onClick={() =>

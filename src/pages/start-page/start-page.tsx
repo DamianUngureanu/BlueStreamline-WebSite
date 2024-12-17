@@ -8,6 +8,7 @@ import VideoRacing from "../../../public/video-intro.mp4";
 import VideoHisory from "../../../public/history.mp4";
 import VideoTeam from "../../../public/team.mp4";
 import VideoContact from "../../../public/contact.mp4";
+import VideoNews from "../../../public/news.mp4";
 import { PageType } from "@/enums/page-type";
 import MoreInfo from "@/components/more-info";
 import classes from './start-page.module.css'
@@ -26,6 +27,7 @@ const StartPage = ({selectedLanguage,selectLanguage}:StartPageProps) => {
     { type: PageType.racing, path: VideoRacing.originalFilePath.slice(7) },
     { type: PageType.history, path: VideoHisory.originalFilePath.slice(7) },
     { type: PageType.team, path: VideoTeam.originalFilePath.slice(7) },
+    { type: PageType.news, path: VideoNews.originalFilePath.slice(7) },
     { type: PageType.contact, path: VideoContact.originalFilePath.slice(7) },
   ];
   useEffect(() => {
@@ -47,6 +49,8 @@ const StartPage = ({selectedLanguage,selectLanguage}:StartPageProps) => {
         setSelectedPageType(PageType.team);
       } else if (selectedPageType === PageType.team) {
         setSelectedPageType(PageType.contact);
+      } else if (selectedPageType === PageType.news) {
+        setSelectedPageType(PageType.news);
       } else if (selectedPageType === PageType.contact) {
         setSelectedPageType(PageType.racing);
       }

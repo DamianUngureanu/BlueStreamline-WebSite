@@ -1,22 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import classes from "./team-man-pose.module.css";
-import { Cars } from "@/enums/cars";
-import { Departament } from "@/enums/departament";
 import useDictionary from "@/hooks/use-dictionary";
 import classNames from "classnames";
 import { useWindowDimensions } from "@/hooks/use-window-dimensions";
 import { TeamData } from "@/data/team";
-import { CarsData } from "@/data/cars";
 import { TeamType } from "@/types/team";
+import { CarsData } from "@/data/cars";
 
 interface TeamManPoseProps {
   selectedLanguage: "ro" | "en";
-  selectLanguage: (value: "ro" | "en") => void;
 }
 
 const TeamManPose = ({
   selectedLanguage,
-  selectLanguage,
 }: TeamManPoseProps) => {
   const { dictionary, setLanguage } = useDictionary();
   const countColumn = useRef(0);

@@ -59,7 +59,7 @@
     position:absolute;
     left:100%;
     top:0;
-    z-index: 1;
+    z-index: 4;
 }
 .firstTransitionPanelStart{
     animation:firstTransition 1.5s !important;
@@ -88,7 +88,7 @@
     left:100%;
     top:0;
 
-    z-index: 2;
+    z-index: 5;
 }
 .secondTransitionPanelStart{
     animation:secondTransition 1.5s !important;

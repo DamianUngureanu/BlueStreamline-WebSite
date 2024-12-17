@@ -1,0 +1,20 @@
+.tabsContainer {
+    background-color: var(--background);
+    grid-column: span 3;
+    grid-row: span 3;
+  
+    z-index: 1;
+  
+    margin-left: 10px;
+    padding: 10px;
+  }
+  .tabs{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      background-color: color-mix(in oklab, var(--background) 70%, rgba(0,0,0,0) 30%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+  }

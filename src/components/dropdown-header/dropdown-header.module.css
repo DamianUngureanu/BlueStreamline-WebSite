@@ -5,6 +5,7 @@
 
     border-radius: 4px;
     background-color: var(--color-accent);
+    color:white;
 
     display: flex;
     justify-content: space-between;

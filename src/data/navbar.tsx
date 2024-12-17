@@ -14,20 +14,26 @@ export const NavbarData: NavbarType = {
     { 
         pageTitleEN:"History",
         pageTitleRO:"Istorie",
-        pageType: PageType.racing, 
+        pageType: PageType.history, 
         link: "/#/history",
     },
     { 
-        pageTitleEN:"Team",
-        pageTitleRO:"Echipă",
-        pageType: PageType.racing, 
+        pageTitleEN:"Team & \n Sponsors",
+        pageTitleRO:"Echipă & \n Sponsori",
+        pageType: PageType.team, 
         link: "/#/team",
+    },
+    { 
+        pageTitleEN:"News",
+        pageTitleRO:"Noutăți",
+        pageType: PageType.news, 
+        link: "/#/news",
     },
     { 
         pageTitleEN:"Contact us",
         pageTitleRO:"Contactează-ne",
-        pageType: PageType.racing, 
+        pageType: PageType.contact, 
         link: "/#/contact",
-    }
+    },
 ],
 };
